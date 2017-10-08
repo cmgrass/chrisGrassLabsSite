@@ -1,0 +1,27 @@
+$def with (message)
+
+<!DOCTYPE html> <!--Inform the browser to use latest versoin of HTML-->
+<html lang="en">  <!--Element signifies beginning of document, has attribute-->
+    <head>  <!--Element identifies top of document-->
+        <meta charset="utf-8">
+        <title>Christopher's Practice WebApp</title>
+        <!--`link` element defines relationship between HTML and CSS-->
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>  <!--All visible content goes in the `body` element-->
+        <!--Heading element-->
+        <h1>Christopher's Practice WebApp</h1>
+        <!--Paragraph element-->
+        <p>
+        This is a webpage made by Christopher while he learns html/css.
+        I will write some information about myself in this paragraph element.
+        I live with my wife in Dryden, Michigan. We have two motorcycles, a boat
+        and a nice blue home. In our free time we like to explore Michigan.
+        </p>
+    $if message:
+        This is my message: <p id="p001">$message</p>.
+    $else:
+        There's, <p>No Message For you</p>
+
+    </body>
+</html>
