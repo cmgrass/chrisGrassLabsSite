@@ -78,6 +78,10 @@ h1, h3, h4, h5, p {
   margin-bottom: 22px;
 }
 
+.topContent {
+  margin-top: 22px;
+}
+
 /*----- B U T T O N S -----*/
 .btn {
   border-radius: 5px;
