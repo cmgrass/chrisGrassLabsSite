@@ -73,6 +73,22 @@ table {
   width: 960px;
 }
 
+/*----- C L E A R F I X -----*/
+/* This will allow a parent to act as a container for floated elements.
+This applies the proper resets so that the floated elements are contained.*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
 /*---- T Y P O G R A P H Y -----*/
 h1, h3, h4, h5, p {
   margin-bottom: 22px;
@@ -94,7 +110,28 @@ h1, h3, h4, h5, p {
   padding: 10px 30px;
 }
 
+/*----- P R I M A R Y   H E A D E R -----*/
+.logo {
+  border-top: 4px solid #648880;
+  padding: 40px 0 22px 0;
+  float: left;
+}
+
 /*----- H O M E -----*/
 .hero {
   padding: 22px 80px 66px 80px;
+}
+
+/*----- P R I M A R Y   F O O T E R -----*/
+.primary-footer small {
+  float: left;
+}
+
+.primary-footer nav {
+  float: right;
+}
+
+.primary-footer {
+  padding-bottom: 44px;
+  padding-top: 44px;
 }
