@@ -9,7 +9,7 @@ $def with (message)
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>  <!--All visible content goes in the `body` element-->
-        <header class="container group">
+        <header class="primary-header container group">
             <h1 class="logo">
               <a href="/">Christopher's <br> WebApp</a>
             </h1>
@@ -35,47 +35,50 @@ $def with (message)
 
             $if message:
                 <p>This is my message: <br>
-                    <strong id="p001">$message</strong>.</p>
+                    <strong id="p001">$message</strong>
+                </p>
             $else:
                 <p>There's no message For you</p>
 
             <a class="btn btn-alt" href="register.html">Register Now</a>
         </section>
 
-        <section class="grid">
+        <section class="row">
+          <div class="grid">
             <section class="teaser col-1-3">
-                <a href="blog.html">
-                    <h5>Blog Posts</h5>
-                    <h3>Favorite ideas, fun tools and tricks, and updates</h3>
-                </a>
-                <p>
-                    This site will contain blog posts about ideas I've been having.
-                    Along with some tools that make my life easier.
-                </p>
+              <a href="blog.html">
+                <h5>Blog Posts</h5>
+                <h3>Favorite ideas, fun tools and tricks, and updates</h3>
+              </a>
+              <p>
+                This site will contain blog posts about ideas I've been having.
+                Along with some tools that make my life easier.
+              </p>
             </section><!--
 
-         --><section class="teaser col-1-3">
-                <a href="techResource.html">
-                    <h5>Technical Resources</h5>
-                    <h3>Discussions of projects results and howtos.</h3>
-                </a>
-                <p>
-                    Looks at the results of my projects, and learn how I conducted
-                    them. This will hopefully serve as a resource for detailed
-                    project implementations and information.
-                </p>
+            --><section class="teaser col-1-3">
+              <a href="techResource.html">
+                <h5>Technical Resources</h5>
+                <h3>Discussions of projects results and howtos.</h3>
+              </a>
+              <p>
+                Looks at the results of my projects, and learn how I conducted
+                them. This will hopefully serve as a resource for detailed
+                project implementations and information.
+              </p>
             </section><!--
 
-         --><section class="teaser col-1-3">
-                <a href="randomness.html">
-                    <h5>Randomness</h5>
-                    <h3>Funny, motorcycles, house things, andere?</h3>
-                </a>
-                <p>
-                    This will be a catchall for any other random thoughts I want to
-                    share with the internet.
-                </p>
+            --><section class="teaser col-1-3">
+              <a href="randomness.html">
+                <h5>Randomness</h5>
+                <h3>Funny, motorcycles, house things, andere?</h3>
+              </a>
+              <p>
+                This will be a catchall for any other random thoughts I want to
+                share with the internet.
+              </p>
             </section>
+          </div>
         </section>
 
         <footer class="primary-footer container group">

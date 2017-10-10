@@ -50,13 +50,14 @@ table {
 /* ----- E N D   O F   C S S   R E S E T -----*/
 /* Beginning of my specific stylesheet */
 #p001 {
-    color: green;
+    color: #99ff99;
     font-size: 32px;
     text-transform: uppercase;
 }
 
 /*----- B O D Y -----*/
 body {
+  background: #293f50;
   color: #888;
   /* font: `font-style` `font-variant` `font-weight`
   `font-size`/`line-height` `font-family01`, `font-family02`,
@@ -99,6 +100,13 @@ This applies the proper resets so that the floated elements are contained.*/
 .group {
   clear: both;
   *zoom: 1;
+}
+
+/*----- R O W S -----*/
+.row {
+  background: #fff;
+  min-width: 960px;
+  padding: 66px 0 44px 0;
 }
 
 /*---- T Y P O G R A P H Y -----*/
@@ -149,17 +157,33 @@ p a {
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
 
 /*----- B U T T O N S -----*/
 .btn {
   border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
   display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
   margin: 0;
+  text-transform: uppercase;
 }
-
 .btn-alt {
-  border: 1px solid #dfe2e5;
+  border: 1px solid #fff;
   padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
 }
 
 /*----- P R I M A R Y   H E A D E R -----*/
@@ -188,6 +212,7 @@ p a {
 
 /*----- H O M E -----*/
 .hero {
+  color: #fff;
   line-height: 44px;
   padding: 22px 80px 66px 80px;
   text-align: center;
