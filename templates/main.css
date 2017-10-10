@@ -66,11 +66,14 @@ table {
           box-sizing: border-box;
 }
 
+.container,
+.grid {
+  margin: 0 auto; /* Center on page */
+  width: 960px;
+}
 .container {
-  margin: 0 auto; /* `auto` left/right margin will center the element in page */
   padding-left: 30px;
   padding-right: 30px;
-  width: 960px;
 }
 
 /*----- C L E A R F I X -----*/
@@ -120,6 +123,28 @@ h1, h3, h4, h5, p {
 /*----- H O M E -----*/
 .hero {
   padding: 22px 80px 66px 80px;
+}
+
+/*----- R E U S A B L E   L A Y O U T -----*/
+.col-1-3 {
+  width: 33.33%
+}
+
+.col-2-3 {
+  width: 66.66%
+}
+
+.col-1-3,
+.col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*----- P R I M A R Y   F O O T E R -----*/
