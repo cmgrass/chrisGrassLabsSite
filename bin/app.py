@@ -6,7 +6,9 @@ urls = (
     '/blog.html', 'blog',
     '/techResource.html', 'techResource',
     '/randomness.html', 'randomness',
-    '/register.html', 'register'
+    '/register.html', 'register',
+    '/blog20171009A.html', 'blog20171009A',
+    '/blog20171010A.html', 'blog20171010A'
 )
 
 app = web.application(urls, globals())
@@ -37,6 +39,14 @@ class randomness(object):
 class register(object):
     def GET(self):
         return render.register()    # Render `register.html`
+
+class blog20171009A(object):
+    def GET(self):
+        return render.blog20171009A()    # Render `blog20171009A.html`
+
+class blog20171010A(object):
+    def GET(self):
+        return render.blog20171010A()    # Render `blog20171010A.html`
 
 if __name__ == "__main__":
     app.run()
