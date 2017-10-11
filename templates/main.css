@@ -179,7 +179,6 @@ p a {
 /*----- B U T T O N S -----*/
 .btn {
   border-radius: 5px;
-  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-weight: 400;
@@ -188,12 +187,23 @@ p a {
   text-transform: uppercase;
 }
 .btn-alt {
+  color: #fff;
   border: 1px solid #fff;
   padding: 10px 30px;
 }
 .btn-alt:hover {
   background: #fff;
   color: #648880;
+}
+.btn-blog{
+  color: #648880;
+  border: 1px solid #648880;
+  padding: 10px 30px;
+  margin-bottom: 22px;
+}
+.btn-blog:hover{
+  background: #648880;
+  color: #fff;
 }
 
 /*----- P R I M A R Y   H E A D E R -----*/
