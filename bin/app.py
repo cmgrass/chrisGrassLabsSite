@@ -13,7 +13,8 @@ urls = (
 
 app = web.application(urls, globals())
 
-render = web.template.render('templates/')
+render = web.template.render('templates/', base="layout")
+render_plain = web.template.render('templates/')
 
 class index(object):
     def GET(self):
@@ -22,7 +23,7 @@ class index(object):
 
 class mainCss(object):
     def GET(self):
-        return render.main()    # Render `main.css`
+        return render_plain.main()    # Render `main.css`
 
 class blog(object):
     def GET(self):
