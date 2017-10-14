@@ -4,11 +4,11 @@ urls = (
     '/', 'index',
     '/main.css', 'mainCss',
     '/blog', 'blog',
-    '/techResource.html', 'techResource',
-    '/randomness.html', 'randomness',
+    '/techResource', 'techResource',
+    '/randomness', 'randomness',
     '/register', 'register',
-    '/blog20171009A.html', 'blog20171009A',
-    '/blog20171010A.html', 'blog20171010A'
+    '/blog20171009A', 'blog20171009A',
+    '/blog20171010A', 'blog20171010A'
 )
 
 app = web.application(urls, globals())
