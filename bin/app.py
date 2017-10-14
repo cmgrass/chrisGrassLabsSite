@@ -3,10 +3,10 @@ import web
 urls = (
     '/', 'index',
     '/main.css', 'mainCss',
-    '/blog.html', 'blog',
+    '/blog', 'blog',
     '/techResource.html', 'techResource',
     '/randomness.html', 'randomness',
-    '/register.html', 'register',
+    '/register', 'register',
     '/blog20171009A.html', 'blog20171009A',
     '/blog20171010A.html', 'blog20171010A'
 )
@@ -39,7 +39,20 @@ class randomness(object):
 
 class register(object):
     def GET(self):
-        return render.register()    # Render `register.html`
+        return render.registerForm()    # Render `register.html`
+
+    def POST(self):
+        form = web.input(name="Nobody", email="you@domain", message="..")
+        userFeedback = '''Hi %s, thanks for registering! Your email is: `%s`,
+                          and you wanted to say: "%s". I won't be getting back
+                          to you because I'm not storing this information yet.
+                          Soon I would like to create a nice set of CSS classes
+                          for this registration page, create user state, and
+                          eventually log to a database!''' % (form.name,
+                                                             form.email,
+                                                             form.message)
+
+        return render.register(userFeedback = userFeedback)
 
 class blog20171009A(object):
     def GET(self):
